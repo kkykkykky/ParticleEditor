@@ -11,13 +11,15 @@
     <AssemblyName>RSkoi_ParticleEditor</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DefineConstants>TRACE;DEBUG;KK</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
@@ -30,33 +32,33 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="0Harmony, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Libs\0Harmony.dll</HintPath>
+    <Reference Include="0Harmony, Version=2.3.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\IllusionLibs.BepInEx.Harmony.2.3.2\lib\net35\0Harmony.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Libs\Assembly-CSharp.dll</HintPath>
+      <HintPath>..\packages\IllusionLibs.Koikatu.Assembly-CSharp.2019.4.27\lib\net35\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Libs\Assembly-CSharp-firstpass.dll</HintPath>
+      <HintPath>..\packages\IllusionLibs.Koikatu.Assembly-CSharp-firstpass.2019.4.27\lib\net35\Assembly-CSharp-firstpass.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="BepInEx, Version=5.0.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Libs\BepInEx.dll</HintPath>
+    <Reference Include="BepInEx, Version=5.4.8.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\IllusionLibs.BepInEx.5.4.8\lib\net35\BepInEx.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="BepInEx.Harmony, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Libs\BepInEx.Harmony.dll</HintPath>
+      <HintPath>..\packages\IllusionLibs.BepInEx.Harmony.2.3.2\lib\net35\BepInEx.Harmony.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="ExtensibleSaveFormat, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Libs\ExtensibleSaveFormat.dll</HintPath>
+      <HintPath>..\packages\ExtensibleSaveFormat.Koikatu.16.3.0\lib\net35\ExtensibleSaveFormat.dll</HintPath>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="KKAPI, Version=1.10.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Libs\KKAPI.dll</HintPath>
+    <Reference Include="KKAPI, Version=1.19.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\IllusionModdingAPI.KKAPI.1.19.0\lib\net35\KKAPI.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -65,34 +67,28 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>Libs\UnityEngine.dll</HintPath>
+      <HintPath>..\packages\IllusionLibs.Koikatu.UnityEngine.5.6.2\lib\net35\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\IllusionLibs.Koikatu.UnityEngine.UI.5.6.2\lib\net35\UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Core\ParticleEditor.Core.cs" />
-    <Compile Include="GUI\ParticleEditor.GUI.Lifetime.cs" />
-    <Compile Include="GUI\ParticleEditor.GUI.Speed.cs" />
     <Compile Include="ParticleEditor.cs" />
-    <Compile Include="GUI\ParticleEditor.GUI.cs" />
-    <Compile Include="GUI\ParticleEditor.GUI.Emission.cs" />
-    <Compile Include="GUI\ParticleEditor.GUI.General.cs" />
-    <Compile Include="GUI\ParticleEditor.GUI.Noise.cs" />
-    <Compile Include="GUI\ParticleEditor.GUI.Renderer.cs" />
-    <Compile Include="GUI\ParticleEditor.GUI.Shape.cs" />
-    <Compile Include="Scene\ParticleEditor.Scene.cs" />
-    <Compile Include="Scene\ParticleEditor.Scene.Emission.cs" />
-    <Compile Include="Scene\ParticleEditor.Scene.General.cs" />
-    <Compile Include="Scene\ParticleEditor.Scene.Lifetime.cs" />
-    <Compile Include="Scene\ParticleEditor.Scene.Noise.cs" />
-    <Compile Include="Scene\ParticleEditor.Scene.Renderer.cs" />
-    <Compile Include="Scene\ParticleEditor.Scene.Shape.cs" />
-    <Compile Include="Scene\ParticleEditor.Scene.Speed.cs" />
-    <Compile Include="Scene\ParticleEditor.SerializableObjects.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Libs\" />
+    <None Include="packages.config" />
   </ItemGroup>
+  <Import Project="..\Shared\Shared.projitems" Label="Shared" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\IllusionLibs.BepInEx.Harmony.2.3.2\build\IllusionLibs.BepInEx.Harmony.targets" Condition="Exists('..\packages\IllusionLibs.BepInEx.Harmony.2.3.2\build\IllusionLibs.BepInEx.Harmony.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\IllusionLibs.BepInEx.Harmony.2.3.2\build\IllusionLibs.BepInEx.Harmony.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\IllusionLibs.BepInEx.Harmony.2.3.2\build\IllusionLibs.BepInEx.Harmony.targets'))" />
+  </Target>
 </Project>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>ce920ada-f760-4fec-ad64-3fe1991eb69c</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Core\ParticleEditor.Core.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GUI\ParticleEditor.GUI.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GUI\ParticleEditor.GUI.Emission.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GUI\ParticleEditor.GUI.General.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GUI\ParticleEditor.GUI.Lifetime.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GUI\ParticleEditor.GUI.Noise.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GUI\ParticleEditor.GUI.Renderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GUI\ParticleEditor.GUI.Shape.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)GUI\ParticleEditor.GUI.Speed.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ParticleEditor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scene\ParticleEditor.Scene.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scene\ParticleEditor.Scene.Emission.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scene\ParticleEditor.Scene.General.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scene\ParticleEditor.Scene.Lifetime.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scene\ParticleEditor.Scene.Noise.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scene\ParticleEditor.Scene.Renderer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scene\ParticleEditor.Scene.Shape.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scene\ParticleEditor.Scene.Speed.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Scene\ParticleEditor.SerializableObjects.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Libs\" />
+  </ItemGroup>
+</Project>

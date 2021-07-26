@@ -1,11 +1,23 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2018
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RSkoi_ParticleEditor", "RSkoi_ParticleEditor\RSkoi_ParticleEditor.csproj", "{41F9C297-9949-449C-B00C-FB1842E712FD}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Shared", "Shared\Shared.shproj", "{CE920ADA-F760-4FEC-AD64-3FE1991EB69C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HS2_ParticleEditor", "HS2_ParticleEditor\HS2_ParticleEditor.csproj", "{858BC1CB-9CD4-418E-9C5B-4B3FD845DA5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AI_ParticleEditor", "AI_ParticleEditor\AI_ParticleEditor.csproj", "{20D1CBA8-1148-412E-9E76-8B74BBC353EE}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Shared\Shared.projitems*{20d1cba8-1148-412e-9e76-8b74bbc353ee}*SharedItemsImports = 4
+		Shared\Shared.projitems*{41f9c297-9949-449c-b00c-fb1842e712fd}*SharedItemsImports = 4
+		Shared\Shared.projitems*{858bc1cb-9cd4-418e-9c5b-4b3fd845da5f}*SharedItemsImports = 4
+		Shared\Shared.projitems*{ce920ada-f760-4fec-ad64-3fe1991eb69c}*SharedItemsImports = 13
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -15,6 +27,14 @@ Global
 		{41F9C297-9949-449C-B00C-FB1842E712FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41F9C297-9949-449C-B00C-FB1842E712FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41F9C297-9949-449C-B00C-FB1842E712FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{858BC1CB-9CD4-418E-9C5B-4B3FD845DA5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{858BC1CB-9CD4-418E-9C5B-4B3FD845DA5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{858BC1CB-9CD4-418E-9C5B-4B3FD845DA5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{858BC1CB-9CD4-418E-9C5B-4B3FD845DA5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20D1CBA8-1148-412E-9E76-8B74BBC353EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20D1CBA8-1148-412E-9E76-8B74BBC353EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20D1CBA8-1148-412E-9E76-8B74BBC353EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20D1CBA8-1148-412E-9E76-8B74BBC353EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
